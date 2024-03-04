@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroRentalHub...</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <!-- <form action=" " method="post"> -->
+    <div class="container">
+        <div class="cover">
+            <video autoplay muted loop id="bg-video" class="bg-video">
+                <source src="video/bg-video.mp4" type="video/mp4">
+            </video>
+            <div class="form">
+                <div class="info">
+                    <p>Welcome to AgroRentalHub!</br>Your partner in agricultural efficiency. Sign up today to
+                        effortlessly browse and rent high-quality farm equipment. Elevate your farming experience
+                        with us and sow the seeds of a prosperous harvest.</p>
+                    <div class="infobtns">
+                        <button type="button" onclick="showRegisterForm()" class="btns">Register</button>
+                        <button type="button" onclick="showLoginForm()" class="btns">Login</button>
+                    </div>
+                </div>
+
+                <!-- Login Form -->
+                <form action="login.php" method="post">
+                    <div class="loginform">
+                        <div id="logform" class="logform">
+                            <h1 style="margin-bottom:1rem; margin-top:7rem;text-decoration: underline;">Login Here</h1>
+                            <input type="email" name="login-email" class="logininfo" id="login-email"
+                                placeholder="Username" required>
+                            <input type="password" name="login-pass" class="logininfo" id="login-pass"
+                                placeholder="Password" required>
+                            </br></br>
+                            <input type="submit" name="login" value="Login" class="loginbtn">
+                            <p>new user? Register before Login.</p>
+                        </div>
+                </form>
+
+                <!-- Register Form -->
+                <form action="register.php" method="post">
+                    <div id="regform" class="regform">
+                        <div class="reginfo">
+                            <h1 style="margin-bottom:1rem; margin-top:4rem;text-decoration: underline;">Register
+                                Here</h1>
+                            <input type="text" name="reg-name" class="registinfo" id="reg-name" placeholder="Name"
+                                required>
+                            <input type="email" name="reg-email" class="registinfo" id="reg-email" placeholder="Email"
+                                required>
+                            <input type="text" name="mobile" class="registinfo" id="mobile" placeholder="Mobile"
+                                min="10" max="10" required>
+                            <div class="radiobtns">
+                                <input type="radio" name="user-type" value="Buyer" class="radiobtns" id="buyer-radio"
+                                    checked>
+                                <label for="buyer">I'm a Buyer</label>
+                                <input type="radio" name="user-type" value="Seller" class="radiobtns" id="seller-radio">
+                                <label for="seller">I'm a Seller</label>
+                            </div>
+                            <input type="password" name="reg-pass" id="reg-pass" class="registinfo"
+                                placeholder="Password" required>
+                            <input type="submit" value="register" name="register" class="regbtn">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- </form> -->
+
+    <!-- javascript to show from when click on button -->
+    <script>
+        function showLoginForm() {
+            document.getElementById("logform").style.display = "block";
+            document.getElementById("regform").style.display = "none";
+        }
+        function showRegisterForm() {
+            document.getElementById("regform").style.display = "block";
+            document.getElementById("logform").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

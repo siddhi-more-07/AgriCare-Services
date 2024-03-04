@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .cover {
+    width: 100%;
+    height: 48.45rem;
+    display: flex;
+}
+
+.cover .bg-video {
+    height: 48.45rem;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+.form {
+    height: 34rem;
+    width: 69%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(67, 67, 66, 0.7);
+    border: 1px solid black;
+    margin: 7rem 15rem;
+}
+
+.form .info {
+    width: 34rem;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(116, 108, 53, 0.5);
+    color: white;
+    transition: 0.4s;
+}
+
+.info p {
+    font-size: 1.30rem;
+    padding: 0 2.50rem;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.info .infobtns {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6rem;
+}
+
+.infobtns .btns,
+.loginbtn,
+.regbtn {
+    height: 2.40rem;
+    width: 8rem;
+    font-size: 1rem;
+    padding: 3px;
+    margin-left: 2rem;
+    border-radius: 12px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(50, 47, 22, 0.5);
+    transition: 0.4s;
+}
+
+.btns:hover,
+.loginbtn:hover,
+.regbtn:hover {
+    transform: scale(1.2);
+}
+
+.form .loginform {
+    width: 34rem;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(116, 108, 53, 0.5);
+    color: white;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.logform .logininfo,
+.registinfo {
+    height: 1.90rem;
+    width: 15rem;
+    padding: 8px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: white;
+    border: none;
+    background-color: rgba(50, 47, 22, 0.5);
+}
+.loginbtn {
+    margin-left: 2rem;
+    font-size: 1.20rem;
+}
+.regbtn {
+    margin-top: 1.40rem;
+    margin-left: 13rem;
+}
+
+.loginform .logform {
+    display: none;
+}
+
+.info:hover,
+.loginform:hover {
+    background-color: rgba(75, 70, 33, 0.5);
+}
+
+.reginfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.registinfo {
+    margin-left: 9rem;
+}
+
+.radiobtns {
+    margin-left: 1rem;
+    font-size: 1.40rem;
+    margin-top: 1rem;
+}
+
+.loginform .regform {
+    display: none;
+}
