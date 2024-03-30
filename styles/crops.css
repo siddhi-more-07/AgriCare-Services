@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+.container .cover
+{
+    height: 22rem;
+    width: 90.30rem;
+    margin: 2rem;
+    background-image: url(../images/crops-cover-bg.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+}
+.cover strong p{
+    font-size: 3.30rem;
+    margin: 9rem 0;
+    text-shadow: 2px 2px 4px rgba(37, 36, 36, 0.463);
+    animation: crops 2s forwards ease-out;
+}
+
+/* navbar designing */
+.container .varietybox
+{
+    height: 5rem;
+    width: 90.70rem;
+    margin: 0 2rem;
+    justify-content: center;
+    background-color: rgb(241, 241, 241);
+}
+.varietybox ul
+{
+    display: flex;
+    width: 85%;
+    margin: 1.50rem auto;
+    justify-content: space-between;
+}
+.varietybox ul li{
+    font-size: 24px;
+    list-style: none;
+    transition: 0.4s;
+}
+@keyframes crops {
+    from{
+    }
+    to{
+        margin-left: 41rem;
+    }
+}
+
+.container .section-headings
+{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+/* Section 1 designing for vegetables */
+.container .section1,
+.container .section2
+{
+    height: max-content;
+    width: 90.30rem;
+    margin: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+}
+
+.container .section-headings
+{
+    width: 100%;
+
+}
+/* vegetable card 1 design -- carrot */
+.section1 .card1,
+.section2 .card1
+{
+    height: 28rem;
+    width: 22rem;
+    margin: 1.30rem;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    box-shadow: rgba(67, 67, 67, 0.21) 2px 3px 12px 0px;
+}
+.card1 img
+{
+    height: 17rem;
+    width: 22rem;
+}
+.card1 h2
+{
+    margin: 1rem 0;
+    text-align: center;
+}
+.card1 button
+{
+    height: 2.20rem;
+    width: 7rem;
+    font-size: 15px;
+    margin-left: 2.40rem;
+    margin-top: 1.40rem;
+    transition: 0.4s;
+}
+.card1 #sell1
+{
+    background-color: rgba(47, 255, 89, 0.532);
+}
+.card1 #buy1
+{
+    background-color: rgba(0, 153, 255, 0.532);
+}
+
+.card1 button:hover
+{
+    cursor: pointer;
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+

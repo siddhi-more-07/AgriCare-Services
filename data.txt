@@ -1,0 +1,22 @@
+Plateform Name - 
+AgriCare Solutions
+
+slogans-
+Your One-Stop Shop for Agricultural Services
+
+Project idea-
+Our platform offers everything farmers need for farming, like fertilizers, equipment such as tractors, plows, harvesters, cultivators, planters, seeders, sprinklers, combine harvesters, mowers, and trailers. Additionally, farmers can sell their produce—fruits, pulses, vegetables, flowers, and more—at fair prices without middlemen.
+We also provide services to help farmers turn parts of their farms into tourist attractions. They can contact our team through our website to discuss farm decoration for tourism, boosting their recognition and income.
+Moreover, we have a team of doctors available online who can identify plant and animal diseases. Farmers can book appointments with them for consultations and assistance when needed.
+
+
+Database name: farmequipmentrentals
+Table for login/register:             users
+Table for contact us:                 admin_contact
+Table to check booked oredrs:         booked_orders
+Table to check posted services:       posted_services
+Table to keep track of sold services: sold_products
+Tabhle to manage profile:             user_profile
+
+
+

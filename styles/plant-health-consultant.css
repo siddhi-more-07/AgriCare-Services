@@ -1,0 +1,429 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container
+{
+    height: max-content;
+    width: max-content;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* cover section */
+.container .cover
+{
+    height: 36rem;
+    width: 90.20rem;
+    margin: 2rem;
+    background-image: url(../images/plant-worksample1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.cover .content
+{
+    height: 36rem;
+    width: 90.20rem;
+    backdrop-filter: blur(4px);
+    background-color: rgba(213, 181, 224, 0.498);
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.content .info
+{
+    display: flex;
+}
+.info .pic
+{
+    height: 30rem;
+    width: 47rem;
+    margin-top: 1.20rem;
+    background-image: url(../images/plant-cover-removebg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: pic 2s 1 forwards ease-out;
+
+}
+.content h1
+{
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+.info .data
+{
+    display: flex;
+    flex-direction: column;
+}
+.info .data p
+{
+    height: 10rem;
+    margin-top: 6rem;
+    width: 33rem;
+    padding: 1rem;
+    font-size: 1.30rem;
+    color: black;
+    text-align: left;
+    margin-left: 4rem;
+    animation: para 3s 1 forwards ease-out;
+}
+.info button
+{
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.20rem;
+    background-color: rgba(206, 232, 245, 0.379);
+    border: 1px solid black;
+    margin-left: -10rem;
+    animation: btn 2s 1 forwards ease-out;
+    transition: 0.4s;
+} 
+.info button a{
+    color: black;
+}
+.info button:hover
+{
+    transform: scale(1.2);
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: rgba(93, 108, 116, 0.21);
+}
+
+@keyframes pic {
+    from{
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@keyframes para
+{
+    from{
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@keyframes btn {
+    from{
+        opacity: 0;
+    }
+    to
+    {
+        margin-left: 15rem;
+        opacity: 1;
+    }
+}
+
+/* Team info */
+.container .team-section
+{
+    height: 40rem;
+    width: 90.20rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.team-section h1
+{
+    margin-left: 31rem;
+    text-decoration: underline;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.team-section .teamintro
+{
+    height: 40rem;
+    width: 90.20rem;
+    margin-top: 2rem;
+    background-image: url(../images/contact-msg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.teamintro .back i,
+.teamintro .next i
+{
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    align-items: center;
+    margin: 20rem 4rem;
+}
+.teamintro .back button,
+.teamintro .next button
+{
+    height: 5rem;
+    border: none;
+    background: transparent;
+}
+.teamintro .back button i:hover,
+.teamintro .next button i:hover
+{
+    transform: scale(1.5);
+}
+
+/* team1 designing */
+.teamintro .team1
+{
+    height: 32rem;
+    width: 70rem;
+    backdrop-filter: blur(3px);
+    margin: 3rem 0;
+    display: flex;
+}
+.team1 .team1-img,
+.team1 .team1-data
+{
+    height: 32rem;
+    width: 32.50rem;
+}
+.team1 .team1-img
+{
+    background-image: url(../images/plant-cover.png);
+    background-position: center;
+    background-size: cover;
+}
+.team1-img
+{
+    margin-right: 5rem;
+}
+.team1 .team1-data
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.team1-data h1
+{
+    margin: 4rem 8rem;
+}
+.team1-data p
+{
+    padding: 0 3rem;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.team1-data button
+{
+    height: 2.50rem;
+    width: 7.50rem;
+    font-size: 17px;
+    margin: 3rem 13rem;
+    padding: 6px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.team1-data button a
+{
+    color: white;
+}
+.team1-data button:hover
+{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* team2 designing */
+.teamintro .team2
+{
+    height: 32rem;
+    width: 70rem;
+    backdrop-filter: blur(3px);
+    margin: 3rem 0; 
+    display: none;
+    flex-direction: row;
+}
+.team2 .team2-img,
+.team2 .team2-data
+{
+    height: 32rem;
+    width: 32.50rem;
+}
+.team2 .team2-img
+{
+    background-image: url(../images/plant-consultane2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.team2-img
+{
+    margin-right: 5rem;
+}
+.team2 .team2-data
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.team2-data h1
+{
+    margin: 4rem 6rem;
+    text-align: center;
+}
+.team2-data p
+{
+    padding: 0 3rem;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.team2-data button 
+{
+    height: 2.50rem;
+    width: 7.50rem;
+    font-size: 17px;
+    margin: 3rem 13rem;
+    padding: 6px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.team2-data button a
+{
+    color: white;
+}
+.team2-data button:hover
+{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* team contact designing */
+.container .team-contact
+{
+    height: max-content;
+    width: 90.20rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.team-contact h1
+{
+    margin: 1% 38%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+/* farmhouse builder- services provider 1 */
+.team-contact .service-provider1
+{
+    width: 100%;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-provider1 .work-samples1
+{
+    width: 90%;
+    height: 19rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.work-samples1 .sample1-image1,
+.work-samples1 .sample1-image2,
+.work-samples1 .sample1-image3,
+.work-samples1 .sample2-image1,
+.work-samples1 .sample2-image2,
+.work-samples1 .sample2-image3
+{
+    height: 100%;
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);   
+    transition: 0.4s;
+}    
+.sample1-image1
+{
+    background-image: url(../images/plant-worksample1.jpg);
+}
+.sample1-image2
+{
+    background-image: url(../images/plant-consultane.png);
+}
+.sample1-image3
+{
+    background-image: url(../images/plant-worksample2.jpg);
+} 
+.sample1-image1:hover,
+.sample1-image2:hover,
+.sample1-image3:hover,
+.sample2-image1:hover,
+.sample2-image2:hover,
+.sample2-image3:hover
+{
+    transform: rotate(1deg);
+} 
+.service-provider1 .personal-info1
+{
+    width: 70%;
+    height: 18rem;
+    display: flex;
+    justify-content: space-between;
+}
+.personal-info1 .img
+{
+    height: 13rem;
+    width: 19rem;
+    margin: 3rem 2rem;
+    border-radius: 3rem;
+}
+.personal-info1 .info
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.info h1{
+    color: green;
+    text-decoration: none;
+    margin: 1rem 9rem;
+}
+.info p
+{
+    margin: 5px 1rem;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.info a
+{
+    color: blue;
+    font-size: 17px;
+
+}
+
+/* farmhouse builder- services provider 2 */
+.sample2-image1
+{
+    background-image: url(../images/plant-worksample3.jpg);
+}
+.sample2-image2
+{
+    background-image: url(../images/cover2.jpeg);
+}
+.sample2-image3
+{
+    background-image: url(../images/plant-worksample4.jpg);
+} 
